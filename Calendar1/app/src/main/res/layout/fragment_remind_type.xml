@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.xx.administrator.calendar1.RemindType">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the Remind Type:"
+        android:textSize="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleView" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titleView"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentEnd="true">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1"
+            android:text="None"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:text="Ringing"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:text="Shake"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true" />
+        </RadioGroup>
+</RelativeLayout>
