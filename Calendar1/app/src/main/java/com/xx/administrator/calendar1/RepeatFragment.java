@@ -14,31 +14,44 @@ import android.widget.ArrayAdapter;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link RemindType.OnFragmentInteractionListener} interface
+ * {@link com.xx.administrator.calendar1.RepeatFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * create an instance of this fragment.
  */
-public class RemindType extends ListFragment {
+public class RepeatFragment extends ListFragment {
 
     private OnFragmentInteractionListener mListener;
 
-    private static String[] RemindTypeItems = {
-            "None",
-            "Ring",
-            "Shake"
+   private static String[] ListItems = {
+            "Never",
+            "Every Day",
+            "Every Week",
+            "Every 2 Week",
+            "Every Month",
+            "Every Year"
     };
+
+
+     public RepeatFragment() {
+        // Required empty public constructor
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         ArrayAdapter<String> list = new ArrayAdapter<String>(
-                getActivity(),android.R.layout.simple_list_item_1,RemindTypeItems
+                getActivity(),android.R.layout.simple_list_item_1,ListItems
         );
+        /*ArrayAdapter<String> list = new ArrayAdapter<String>(
+                this,R.layout.list_item,R.id.itemText,ListItems
+                );*/
+        //ListView repeatList = (ListView)findViewById(R.id.repeatList);
+
+
         setListAdapter(list);
 
-        return inflater.inflate(R.layout.fragment_remind_type, container, false);
+        return inflater.inflate(R.layout.fragment_repeat, container, false);
     }
-
 
     @Override
     public void onAttach(Activity activity) {
@@ -67,9 +80,10 @@ public class RemindType extends ListFragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    public interface OnFragmentInteractionListener
+    {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        public void RepeatTeanction(Uri uri);
     }
 
 }

@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ringing-Calendar"
+            android:text="@string/app_title"
             android:id="@+id/textView"
             android:layout_alignParentBottom="true"
             android:layout_alignTop="@+id/imageButton2"
