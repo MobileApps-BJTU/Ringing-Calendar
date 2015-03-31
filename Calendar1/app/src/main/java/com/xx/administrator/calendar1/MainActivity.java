@@ -25,6 +25,15 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(Activity2Intent);
             }
         });
+        final ImageButton addEvent = (ImageButton)findViewById(R.id.imageButton);
+        addEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AddEventIntent = new Intent(getApplicationContext(),
+                        AddEventActivity.class);
+                startActivity(AddEventIntent);
+            }
+        });
     }
 
 

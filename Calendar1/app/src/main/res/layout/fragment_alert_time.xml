@@ -1,113 +1,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.xx.administrator.calendar1.AlertTime">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xx.administrator.calendar1.AlertTime">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/alertTimeFragment"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose the Alert Time:"
-        android:textSize="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_alignParentLeft="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/titleView" />
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/titleView"
-        android:layout_marginTop="10dp"
-        android:layout_alignParentEnd="true">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton1"
-            android:text="None"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton2"
-            android:text="At time of Event"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton3"
-            android:text="5 minutes before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton4"
-            android:text="15 minutes before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton5"
-            android:text="30 minutes before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton6"
-            android:text="1 hour before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton7"
-            android:text="2 hours before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton8"
-            android:text="1 day before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton9"
-            android:text="2 days before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButton10"
-            android:text="1 week before"
-            android:textSize="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true" />
-    </RadioGroup>
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
 
 </RelativeLayout>
